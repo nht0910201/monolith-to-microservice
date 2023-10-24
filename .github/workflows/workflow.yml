@@ -82,7 +82,7 @@ jobs:
           file: ./udagram-frontend/Dockerfile
           builder: ${{ steps.buildx.outputs.name }}
           push: true
-          tags: ${{ secrets.DOCKER_USERNAME }}/udagram-frontend:latest
+          tags: ${{ secrets.DOCKER_USERNAME }}/udagram-frontend:v1
 
       - name: verify
         run: echo ${{ steps.docker_build.outputs.digest}}
