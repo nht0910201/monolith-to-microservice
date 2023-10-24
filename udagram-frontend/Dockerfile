@@ -1,5 +1,5 @@
 ### Build
-FROM node:12.12.0-alpine as build
+FROM node:12.12.0-alpine as ionic
 ## Create app directory
 WORKDIR /usr/src/app
 ## Install app dependencies
